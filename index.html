@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Promedio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Promedio</h1>
+    <form id="gradeCalculator">
+        <label for="grade1">Calificación 1:</label>
+        <input type="number" id="grade1" step="0.01">
+        <br>
+
+        <label for="grade2">Calificación 2:</label>
+        <input type="number" id="grade2" step="0.01">
+        <br>
+
+        <!-- Agrega más campos de calificación según sea necesario -->
+
+        <button type="button" onclick="calcularPromedio()">Calcular Promedio</button>
+    </form>
+    <p>Promedio: <span id="result">-</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
