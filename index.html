@@ -1,25 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Calculadora de Promedio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <h1>Calculadora de Promedio</h1>
-    <form id="gradeCalculator">
-        <label for="grade1">Calificación 1:</label>
-        <input type="number" id="grade1" step="0.01">
-        <br>
+<form id="gradeCalculator">
+    <h1>Calculadora de Promedio Ponderado</h1>
+    
+    <div class="evaluacion">
+        <label for="nota1">Nota 1:</label>
+        <input type="number" class="nota" id="nota1" step="0.01">
+        <label for="peso1">Peso 1:</label>
+        <input type="number" class="peso" id="peso1" step="0.01">
+    </div>
+    
+    <div class="evaluacion">
+        <label for="nota2">Nota 2:</label>
+        <input type="number" class="nota" id="nota2" step="0.01">
+        <label for="peso2">Peso 2:</label>
+        <input type="number" class="peso" id="peso2" step="0.01">
+    </div>
+    
+    <!-- Agrega más campos de evaluación según sea necesario -->
 
-        <label for="grade2">Calificación 2:</label>
-        <input type="number" id="grade2" step="0.01">
-        <br>
-
-        <!-- Agrega más campos de calificación según sea necesario -->
-
-        <button type="button" onclick="calcularPromedio()">Calcular Promedio</button>
-    </form>
-    <p>Promedio: <span id="result">-</span></p>
-    <script src="script.js"></script>
-</body>
-</html>
+    <button type="button" onclick="calcularPromedioPonderado()">Calcular Promedio Ponderado</button>
+</form>
+<p id="result">-</p>
+<p id="puntaje1">-</p>
+<p id="puntaje2">-</p>
+<!-- Agrega más elementos de resultado según sea necesario -->
